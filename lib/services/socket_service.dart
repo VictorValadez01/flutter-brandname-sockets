@@ -19,7 +19,7 @@ class SocketService with ChangeNotifier {
   }
 
   void _initconfig() {
-    this._socket = IO.io('http://localhost:3000', <String, dynamic>{
+    this._socket = IO.io('https://flutter-socket-votes-app.herokuapp.com/', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': true,
     });
